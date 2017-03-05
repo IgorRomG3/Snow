@@ -21,7 +21,7 @@ gulp.task('htmlIncluder', function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('dev/sass/styles.main.sass')
+  return gulp.src('dev/sass/style.main.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('build/css/'))
     .pipe(connect.reload());

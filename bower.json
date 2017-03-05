@@ -1,0 +1,17 @@
+{
+  "name": "Snow",
+  "description": "Practice with sass bootstrap gulp",
+  "main": "gulpfile.js",
+  "authors": [
+    "IgorRomG3 <webroma57@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IgorRomG3/Snow",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

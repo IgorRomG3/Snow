@@ -1,0 +1,21 @@
+header {
+  height: 670px;
+  background-color: #636363; }
+  header .navbar {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0;
+    position: fixed; }
+    header .navbar .navbar-brand {
+      margin: 0; }
+    header .navbar .nav {
+      margin-top: 5px;
+      float: right; }
+      header .navbar .nav li a {
+        color: #a5a5a5;
+        font-family: arial;
+        font-size: 15px;
+        text-transform: uppercase; }
+  header img {
+    width: 82px;
+    height: 32px; }
