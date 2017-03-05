@@ -1,11 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 header {
   height: 670px;
-  background-color: #636363; }
+  background-color: #636363;
+  position: relative; }
   header .navbar {
     margin-top: 20px;
     background-color: transparent;
     border: 0;
-    position: fixed; }
+    border-radius: 0; }
     header .navbar .navbar-brand {
       margin: 0; }
     header .navbar .nav {
@@ -19,3 +24,30 @@ header {
   header img {
     width: 82px;
     height: 32px; }
+  header .fixed {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff; }
+  header .banner {
+    position: absolute;
+    left: 25%;
+    bottom: 262px;
+    text-align: center; }
+    header .banner p {
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+    header .banner h1,
+    header .banner span {
+      color: #fff;
+      font-family: "Playfair Display";
+      font-size: 48px;
+      line-height: 60px;
+      font-weight: 700; }
+    header .banner span {
+      font-weight: 400;
+      font-style: italic; }
