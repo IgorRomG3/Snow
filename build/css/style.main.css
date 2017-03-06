@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #f6f6f6; }
+
 header {
   height: 670px;
   background-color: #636363;
@@ -37,7 +40,7 @@ header {
   header .banner {
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 22%;
     text-align: center; }
     header .banner p {
       color: #fff;
@@ -62,22 +65,126 @@ header {
       background-color: transparent;
       border: 0; }
 
-main .about h2 {
-  color: #171717;
-  font-family: "Playfair Display";
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 60px;
+main .about {
+  height: 365px;
   text-align: center; }
+  main .about .discription {
+    margin-top: 95px; }
+    main .about .discription h2 {
+      color: #171717;
+      font-family: "Playfair Display";
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 60px; }
+    main .about .discription p {
+      width: 750px;
+      display: inline-block;
+      color: #5f5f5f;
+      font-family: "Work Sans";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px; }
 
-main .about p {
-  color: #5f5f5f;
-  font-family: "Work Sans";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center; }
+main .donelist {
+  height: 258px;
+  background-image: url("../img/donelist-bg.png"); }
+  main .donelist .list {
+    margin-top: 121px; }
+    main .donelist .list p {
+      padding-left: 50px;
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase; }
+  main .donelist .portfolio,
+  main .donelist .time,
+  main .donelist .feedback,
+  main .donelist .likes {
+    position: relative; }
+    main .donelist .portfolio:before,
+    main .donelist .time:before,
+    main .donelist .feedback:before,
+    main .donelist .likes:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat; }
+  main .donelist .portfolio:before {
+    background-image: url("../img/donelist-portfolio.png"); }
+  main .donelist .time:before {
+    background-image: url("../img/donelist-clock.png"); }
+  main .donelist .feedback:before {
+    background-image: url("../img/donelist-star.png"); }
+  main .donelist .likes:before {
+    background-image: url("../img/donelist-like.png"); }
 
-main .about .sign {
-  display: block;
+main .projects .project-title {
+  margin-bottom: 57px;
   text-align: center; }
+  main .projects .project-title h2 {
+    color: #171717;
+    font-family: "Playfair Display";
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px; }
+  main .projects .project-title p {
+    width: 750px;
+    display: inline-block;
+    color: #5f5f5f;
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; }
+
+main .projects .pic {
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #d9d9d9; }
+
+main .projects .big {
+  height: 530px; }
+
+main .projects .commercial {
+  padding-top: 60px;
+  background-color: #fff;
+  text-align: center; }
+  main .projects .commercial h4 {
+    margin: 0;
+    color: #171717;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 84px; }
+  main .projects .commercial p {
+    color: #171717;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase; }
+
+main .testimonials {
+  position: relative;
+  height: 500px;
+  background-image: url("../img/bg-pattern.jpg"); }
+  main .testimonials p {
+    text-align: center; }
+  main .testimonials .blaquote {
+    margin-top: 230px;
+    color: #fff;
+    font-family: "Playfair Display";
+    font-style: italic;
+    line-height: 36px;
+    font-size: 30px; }
+  main .testimonials .author {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase; }
