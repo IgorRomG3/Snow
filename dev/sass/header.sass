@@ -3,10 +3,12 @@ header
     background-color: #636363
     position: relative
     .navbar
-        margin-top: 20px
+        padding: 33px 0;
         background-color: transparent;
         border: 0
         border-radius: 0
+        position: fixed
+        width: 100%
         .navbar-brand
             margin: 0
         .nav
@@ -18,33 +20,61 @@ header
                     font-family: arial
                     font-size: 15px
                     text-transform: uppercase
-    img
-        width: 82px
-        height: 32px
+    .logo-light,
+    .logo-dark
+        img
+            width: 82px
+            height: 32px
+    .logo-dark
+        display: none
     .fixed
+        z-index: 1000
         margin: 0
-        position: fixed
-        width: 100%
         background-color: #fff
+        transition: background-color 0.5s ease
     .banner
         position: absolute
+        top: 30%
         left: 25%
-        bottom: 262px
         text-align: center
         p
-            color: #fff;
-            font-family: "Work Sans";
-            font-size: 14px;
-            font-weight: 700;
+            color: #fff
+            font-family: "Work Sans"
+            font-size: 14px
+            font-weight: 700
             text-transform: uppercase;
             text-align: center
-        h1,
+        h2,
         span
             color: #fff;
             font-family: "Playfair Display";
-            font-size: 48px;
-            line-height: 60px;
-            font-weight: 700;
+            font-size: 48px
+            line-height: 60px
+            font-weight: 700
+        h2
+            margin-bottom: 148px
         span 
             font-weight: 400
-            font-style: italic;
+            font-style: italic
+        .header-down-btn
+            background-color: transparent
+            border: 0
+main
+    .about
+        h2
+            color: #171717;
+            font-family: "Playfair Display";
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 60px;
+            text-align: center
+        p
+            color: #5f5f5f;
+            font-family: "Work Sans";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center
+        .sign
+            display: block
+            text-align: center
