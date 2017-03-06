@@ -21,6 +21,6 @@ var downBtn = document.getElementsByClassName('header-down-btn')[0],
     downBtnLocation = downBtn.getBoundingClientRect().bottom + window.pageYOffset;
 
 downBtn.onclick = function() {
-  window.scrollTo(downBtnLocation,670);
+  window.scrollTo(downBtnLocation,660);
 } 
   
