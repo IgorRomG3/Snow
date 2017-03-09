@@ -186,6 +186,12 @@ main
             line-height: 24px
             text-align: center
         .blog-wrap
+            @media (max-width:1199px)
+                margin: 50px auto
+                width: 800px
+            @media (max-width:864px)
+                margin: 50px auto
+                width: 400px
             width: 100%
             margin: 50px 0
             display: block
@@ -233,7 +239,7 @@ main
                 height: 7px
                 display: inline-block
                 background-color: #d1d1d1
-                border-radius: 100%
+                border-radius: 50%
                 cursor: pointer
                 transition: all .3s ease
                 &:hover

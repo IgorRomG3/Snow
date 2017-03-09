@@ -28,7 +28,9 @@ header {
         color: #a5a5a5;
         font-family: arial;
         font-size: 15px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: color .7s ease;
+        cursor: pointer; }
   header .logo-light img,
   header .logo-dark img {
     width: 82px;
@@ -41,9 +43,7 @@ header {
     background-color: #fff;
     transition: background-color 0.5s ease; }
   header .banner {
-    position: absolute;
-    top: 30%;
-    left: 25%;
+    margin: 250px auto 0 auto;
     text-align: center; }
     header .banner p {
       color: #fff;
@@ -264,6 +264,14 @@ main .blog {
     margin: 50px 0;
     display: block;
     overflow: hidden; }
+    @media (max-width: 1199px) {
+      main .blog .blog-wrap {
+        margin: 50px auto;
+        width: 800px; } }
+    @media (max-width: 864px) {
+      main .blog .blog-wrap {
+        margin: 50px auto;
+        width: 400px; } }
     main .blog .blog-wrap ul {
       width: 9999px;
       transition: margin-left .5s ease; }
@@ -307,7 +315,7 @@ main .blog {
       height: 7px;
       display: inline-block;
       background-color: #d1d1d1;
-      border-radius: 100%;
+      border-radius: 50%;
       cursor: pointer;
       transition: all .3s ease; }
       main .blog ol li:hover {

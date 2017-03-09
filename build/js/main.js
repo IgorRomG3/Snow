@@ -20,7 +20,16 @@ var downBtn = document.getElementsByClassName('header-down-btn')[0],
     downBtnLocation = downBtn.getBoundingClientRect().bottom + window.pageYOffset;
 
 downBtn.onclick = function() {
-  window.scrollTo(downBtnLocation,660);
+  // window.scrollTo(downBtnLocation,660);
+  var offset = 0;
+  var target = 660;
+  var t = setInterval(function(){
+    window.scrollTo(downBtnLocation,offset);
+    offset = offset + 10;
+    if(offset >= target){
+      clearInterval(t);
+    }
+  }, 10);
 } 
   
 //CARUSEL
