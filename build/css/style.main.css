@@ -40,7 +40,7 @@ header {
   header .banner {
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 23%;
     text-align: center; }
     header .banner p {
       color: #fff;
@@ -174,17 +174,136 @@ main .testimonials {
   background-image: url("../img/bg-pattern.jpg"); }
   main .testimonials p {
     text-align: center; }
-  main .testimonials .blaquote {
-    margin-top: 230px;
-    color: #fff;
+  main .testimonials .blaquote-wrap {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    top: 230px; }
+    main .testimonials .blaquote-wrap ul {
+      width: 9999px;
+      transition: margin-left .5s ease; }
+      main .testimonials .blaquote-wrap ul li {
+        width: 1160px;
+        display: inline-block; }
+        @media (max-width: 1199px) {
+          main .testimonials .blaquote-wrap ul li p {
+            width: 80%; } }
+        main .testimonials .blaquote-wrap ul li .blaquote {
+          color: #fff;
+          font-family: "Playfair Display";
+          font-style: italic;
+          line-height: 36px;
+          font-size: 30px; }
+        main .testimonials .blaquote-wrap ul li .author {
+          color: #fff;
+          font-family: "Work Sans";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 36px;
+          text-transform: uppercase; }
+
+main .dots {
+  position: absolute;
+  left: 47.5%;
+  bottom: 10px; }
+  @media (max-width: 1199px) {
+    main .dots {
+      left: 45%; } }
+  main .dots span {
+    margin: 0 5px;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease; }
+    main .dots span:hover {
+      background-color: #fff;
+      transform: scale(2); }
+  main .dots .active {
+    background-color: #fff;
+    transform: scale(2); }
+
+main .clients {
+  padding-top: 75px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center; }
+  main .clients img {
+    display: inline-block; }
+
+main .blog {
+  position: relative; }
+  main .blog h2 {
+    color: #171717;
     font-family: "Playfair Display";
-    font-style: italic;
-    line-height: 36px;
-    font-size: 30px; }
-  main .testimonials .author {
-    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center; }
+  main .blog .blog-descr {
+    margin: 10px auto;
+    width: 688px;
+    height: 38px;
+    color: #5f5f5f;
     font-family: "Work Sans";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    text-transform: uppercase; }
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center; }
+  main .blog .carousel-blog-wrap {
+    margin: 50px 0;
+    display: block;
+    overflow: hidden; }
+    main .blog .carousel-blog-wrap ul {
+      width: 9999px; }
+      main .blog .carousel-blog-wrap ul li {
+        margin-right: 30px;
+        width: 370px;
+        height: 425px;
+        display: inline-block; }
+        main .blog .carousel-blog-wrap ul li .photo {
+          height: 240px;
+          background-color: #dfdfdf; }
+        main .blog .carousel-blog-wrap ul li .descr {
+          padding: 24px 27px 29px 30px;
+          background-color: #fff; }
+          main .blog .carousel-blog-wrap ul li .descr h4 {
+            color: #171717;
+            font-family: "Playfair Display";
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px; }
+          main .blog .carousel-blog-wrap ul li .descr .date {
+            color: #171717;
+            font-family: "Work Sans";
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase; }
+          main .blog .carousel-blog-wrap ul li .descr .text {
+            color: #5f5f5f;
+            font-family: "Work Sans";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px; }
+  main .blog ol {
+    display: block;
+    position: absolute;
+    left: 47.5%; }
+    main .blog ol li {
+      margin-left: 10px;
+      width: 7px;
+      height: 7px;
+      display: inline-block;
+      background-color: #d1d1d1;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: all .3s ease; }
+      main .blog ol li:hover {
+        background-color: #171717;
+        transform: scale(2); }
+      main .blog ol li .selected {
+        background-color: #171717;
+        transform: scale(2); }
