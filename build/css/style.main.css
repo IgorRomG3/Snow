@@ -24,6 +24,15 @@ header {
     header .navbar .nav {
       margin-top: 5px;
       float: right; }
+      @media (max-width: 767px) {
+        header .navbar .nav {
+          float: none; } }
+      @media (max-width: 767px) {
+        header .navbar .nav li {
+          text-align: center; }
+          header .navbar .nav li:hover {
+            background-color: #fff;
+            transition: background-color 1s ease; } }
       header .navbar .nav li a {
         color: #a5a5a5;
         font-family: arial;
@@ -61,6 +70,9 @@ header {
       font-weight: 700; }
     header .banner h2 {
       margin-bottom: 148px; }
+      @media (max-width: 692px) {
+        header .banner h2 {
+          margin-bottom: 70px; } }
     header .banner span {
       font-weight: 400;
       font-style: italic; }
@@ -81,7 +93,6 @@ main .about {
       font-weight: 700;
       line-height: 60px; }
     main .about .discription p {
-      width: 750px;
       display: inline-block;
       color: #5f5f5f;
       font-family: "Work Sans";
@@ -90,10 +101,13 @@ main .about {
       line-height: 24px; }
 
 main .donelist {
-  height: 258px;
+  padding: 100px 0;
   background-image: url("../img/donelist-bg.png"); }
+  @media (max-width: 767px) {
+    main .donelist {
+      text-align: center; } }
   main .donelist .list {
-    margin-top: 121px; }
+    margin-bottom: 50px; }
     main .donelist .list p {
       padding-left: 50px;
       color: #fff;
@@ -118,6 +132,18 @@ main .donelist {
       width: 40px;
       height: 40px;
       background-repeat: no-repeat; }
+      @media (max-width: 767px) {
+        main .donelist .portfolio:before,
+        main .donelist .time:before,
+        main .donelist .feedback:before,
+        main .donelist .likes:before {
+          left: 30%; } }
+      @media (max-width: 530px) {
+        main .donelist .portfolio:before,
+        main .donelist .time:before,
+        main .donelist .feedback:before,
+        main .donelist .likes:before {
+          left: 10%; } }
   main .donelist .portfolio:before {
     background-image: url("../img/donelist-portfolio.png"); }
   main .donelist .time:before {
@@ -139,7 +165,6 @@ main .projects {
       font-weight: 700;
       line-height: 60px; }
     main .projects .project-title p {
-      width: 750px;
       display: inline-block;
       color: #5f5f5f;
       font-family: "Work Sans";
@@ -191,7 +216,11 @@ main .testimonials {
         display: inline-block; }
         @media (max-width: 1199px) {
           main .testimonials .blaquote-wrap ul li p {
+            margin-left: 20px;
             width: 80%; } }
+        @media (max-width: 991px) {
+          main .testimonials .blaquote-wrap ul li p {
+            width: 63%; } }
         main .testimonials .blaquote-wrap ul li .blaquote {
           color: #fff;
           font-family: "Playfair Display";
@@ -210,9 +239,6 @@ main .dots {
   position: absolute;
   left: 47.5%;
   bottom: 10px; }
-  @media (max-width: 1199px) {
-    main .dots {
-      left: 45%; } }
   main .dots span {
     margin: 0 5px;
     width: 7px;
@@ -230,12 +256,9 @@ main .dots {
     transform: scale(2); }
 
 main .clients {
-  padding-top: 75px;
-  height: 200px;
+  padding: 75px 0;
   background-color: #fff;
   text-align: center; }
-  main .clients img {
-    display: inline-block; }
 
 main .blog {
   padding: 95px 0;
@@ -251,7 +274,6 @@ main .blog {
     text-align: center; }
   main .blog .blog-descr {
     margin: 10px auto;
-    width: 688px;
     height: 38px;
     color: #5f5f5f;
     font-family: "Work Sans";
@@ -267,11 +289,11 @@ main .blog {
     @media (max-width: 1199px) {
       main .blog .blog-wrap {
         margin: 50px auto;
-        width: 800px; } }
+        width: 740px; } }
     @media (max-width: 864px) {
       main .blog .blog-wrap {
         margin: 50px auto;
-        width: 400px; } }
+        width: 370px; } }
     main .blog .blog-wrap ul {
       width: 9999px;
       transition: margin-left .5s ease; }
@@ -306,9 +328,9 @@ main .blog {
             font-weight: 400;
             line-height: 24px; }
   main .blog ol {
+    margin: 0 auto;
     display: block;
-    position: absolute;
-    left: 44.5%; }
+    text-align: center; }
     main .blog ol li {
       margin-left: 10px;
       width: 7px;
@@ -371,7 +393,10 @@ main .contact {
     width: 100%; }
   main .contact textarea[name=textarea] {
     height: 170px; }
-  main .contact button {
+  @media (max-width: 767px) {
+    main .contact .contact-btn {
+      text-align: center; } }
+  main .contact .contact-btn button {
     width: 180px;
     height: 54px;
     background-color: #252525;
@@ -397,9 +422,13 @@ footer {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px; }
+  @media (max-width: 767px) {
+    footer h4,
+    footer p,
+    footer .networks {
+      text-align: center; } }
   footer .twit {
     padding-left: 30px;
-    width: 80%;
     position: relative; }
     footer .twit:before {
       content: '';
@@ -411,6 +440,9 @@ footer {
       background-image: url("../img/sprite/sprite.png");
       background-repeat: no-repeat;
       background-position: -17px -16px; }
+      @media (max-width: 767px) {
+        footer .twit:before {
+          left: 3%; } }
   footer .networks {
     width: 100%; }
     footer .networks li {

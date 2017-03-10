@@ -14,11 +14,17 @@ footer
         font-size: 15px
         font-weight: 400
         line-height: 24px
+    h4,
+    p,
+    .networks
+        @media (max-width:767px)
+            text-align: center
     .twit
         padding-left: 30px
-        width: 80%
         position: relative
         &:before
+            @media (max-width:767px)
+                left: 3%
             content: ''
             position: absolute
             left: 0

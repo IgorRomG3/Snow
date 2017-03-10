@@ -12,9 +12,16 @@ header
         .navbar-brand
             margin: 0
         .nav
+            @media (max-width: 767px)
+                float: none
             margin-top: 5px
             float: right
-            li 
+            li
+                @media (max-width:767px)
+                    text-align: center
+                    &:hover
+                        background-color: #fff
+                        transition: background-color 1s ease
                 a
                     color: #a5a5a5;
                     font-family: arial
@@ -52,6 +59,8 @@ header
             line-height: 60px
             font-weight: 700
         h2
+            @media (max-width:692px)
+                margin-bottom: 70px
             margin-bottom: 148px
         span 
             font-weight: 400
