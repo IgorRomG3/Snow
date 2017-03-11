@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #f6f6f6; }
+
 ul {
   list-style: none; }
 
-body {
-  background-color: #f6f6f6; }
+p {
+  margin: 0; }
 
 header {
   height: 670px;
