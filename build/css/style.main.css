@@ -11,49 +11,54 @@ ul {
 p {
   margin: 0; }
 
+.navbar {
+  z-index: 1000;
+  padding: 33px 0;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  position: fixed; }
+  .navbar .navbar-brand {
+    margin: 0; }
+  .navbar .nav {
+    margin-top: 5px;
+    float: right; }
+    @media (max-width: 767px) {
+      .navbar .nav {
+        float: none; } }
+    @media (max-width: 767px) {
+      .navbar .nav li {
+        text-align: center; }
+        .navbar .nav li:hover {
+          background-color: #fff;
+          transition: background-color 1s ease; } }
+    .navbar .nav li a {
+      color: #a5a5a5;
+      font-family: "Work Sans";
+      font-size: 15px;
+      text-transform: uppercase;
+      transition: color .7s ease;
+      cursor: pointer; }
+
+.logo-light img,
+.logo-dark img {
+  width: 82px;
+  height: 32px; }
+
+.logo-dark {
+  display: none; }
+
+.fixed {
+  z-index: 1000;
+  margin: 0;
+  background-color: #fff;
+  transition: background-color 0.5s ease; }
+
 header {
   height: 670px;
   background-color: #636363;
   position: relative; }
-  header .navbar {
-    padding: 33px 0;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    position: fixed;
-    width: 100%; }
-    header .navbar .navbar-brand {
-      margin: 0; }
-    header .navbar .nav {
-      margin-top: 5px;
-      float: right; }
-      @media (max-width: 767px) {
-        header .navbar .nav {
-          float: none; } }
-      @media (max-width: 767px) {
-        header .navbar .nav li {
-          text-align: center; }
-          header .navbar .nav li:hover {
-            background-color: #fff;
-            transition: background-color 1s ease; } }
-      header .navbar .nav li a {
-        color: #a5a5a5;
-        font-family: "Work Sans";
-        font-size: 15px;
-        text-transform: uppercase;
-        transition: color .7s ease;
-        cursor: pointer; }
-  header .logo-light img,
-  header .logo-dark img {
-    width: 82px;
-    height: 32px; }
-  header .logo-dark {
-    display: none; }
-  header .fixed {
-    z-index: 1000;
-    margin: 0;
-    background-color: #fff;
-    transition: background-color 0.5s ease; }
   header .banner {
     margin: 250px auto 0 auto;
     text-align: center; }
@@ -410,6 +415,30 @@ main .contact {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase; }
+
+main .works {
+  padding: 150px 0 100px 0; }
+  main .works ul li {
+    height: 390px;
+    display: inline-block;
+    background-color: #e5e5e5; }
+    main .works ul li:nth-child(even) {
+      background-color: #c7c7c7; }
+    main .works ul li:nth-child(5) {
+      background-color: #2c2c2c; }
+
+main .more-works {
+  background-color: #fff; }
+  main .more-works p {
+    height: 100px;
+    text-align: center; }
+    main .more-works p a {
+      color: #1d1d1d;
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 100px;
+      text-transform: uppercase; }
 
 footer {
   padding-top: 93px;

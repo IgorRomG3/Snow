@@ -1,46 +1,47 @@
+.navbar
+    z-index: 1000
+    padding: 33px 0;
+    width: 100%
+    background-color: transparent;
+    border: 0
+    border-radius: 0
+    position: fixed
+    .navbar-brand
+        margin: 0
+    .nav
+        @media (max-width: 767px)
+            float: none
+        margin-top: 5px
+        float: right
+        li
+            @media (max-width:767px)
+                text-align: center
+                &:hover
+                    background-color: #fff
+                    transition: background-color 1s ease
+            a
+                color: #a5a5a5;
+                font-family: "Work Sans"
+                font-size: 15px
+                text-transform: uppercase
+                transition: color .7s ease
+                cursor: pointer
+.logo-light,
+.logo-dark
+    img
+        width: 82px
+        height: 32px
+.logo-dark
+    display: none
+.fixed
+    z-index: 1000
+    margin: 0
+    background-color: #fff
+    transition: background-color 0.5s ease
 header
     height: 670px
     background-color: #636363
     position: relative
-    .navbar
-        padding: 33px 0;
-        background-color: transparent;
-        border: 0
-        border-radius: 0
-        position: fixed
-        width: 100%
-        .navbar-brand
-            margin: 0
-        .nav
-            @media (max-width: 767px)
-                float: none
-            margin-top: 5px
-            float: right
-            li
-                @media (max-width:767px)
-                    text-align: center
-                    &:hover
-                        background-color: #fff
-                        transition: background-color 1s ease
-                a
-                    color: #a5a5a5;
-                    font-family: "Work Sans"
-                    font-size: 15px
-                    text-transform: uppercase
-                    transition: color .7s ease
-                    cursor: pointer
-    .logo-light,
-    .logo-dark
-        img
-            width: 82px
-            height: 32px
-    .logo-dark
-        display: none
-    .fixed
-        z-index: 1000
-        margin: 0
-        background-color: #fff
-        transition: background-color 0.5s ease
     .banner
         margin: 250px auto 0 auto
         text-align: center
