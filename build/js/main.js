@@ -27,100 +27,57 @@ var downBtn = document.getElementsByClassName('header-down-btn')[0],
 
 function slideDown(data) {
   this.point = data.point;
-  this.location = data.location;
+  // this.location = data.location;
   this.point.onclick = function () {
     this.target = data.target;
+    this.speed = data.speed;
     var target = this.target;
     var offset = 0;
+    var speed = this.speed;
     var t = setInterval(function () {
-      window.scrollTo(this.location, offset);
-      offset = offset + 10;
+      window.scrollTo(window.pageYOffset, offset);
+      offset = offset + speed;
       if (offset >= target) {
         clearInterval(t);
       }
-    }, this.time);
+    },10);
   }
 }
 var btnDown = new slideDown({point:downBtn,
-location:downBtnLocation,
-target:660,
-time:10});
+speed: 10,
+target:660});
 var btnAbout = new slideDown({point:aboutBtn,
-location:aboutBtnLocation,
-target:660,
-time: 10});
+speed: 10,
+target:660});
 var btnContact = new slideDown({point:contactBtn,
-location:contactBtnLocation,
-target:4307,
-time: 1});
-// downBtn.onclick = function () {
-//   var offset = 0;
-//   var target = 660;
-//   var t = setInterval(function () {
-//     window.scrollTo(downBtnLocation, offset);
-//     offset = offset + 10;
-//     if (offset >= target) {
-//       clearInterval(t);
-//     }
-//   }, 10);
-// }
+speed: 70,
+target:4350});
 
 //NUMBERS
 
 var numContainer = document.getElementsByClassName('donelist')[0];
 var num = document.getElementsByClassName('numbers');
-var offset1 = 0;
-var offset2 = 0;
-var offset3 = 0;
-var offset4 = 0;
 
-window.addEventListener('scroll', startCount);
-
-function startCount() {
-  if (window.pageYOffset > 425) {
-    for (var i = 0; i < num.length; i++) {
-      num[i].style.display = 'block';
-    }
-  }
+function Count(data) {
+   this.target = data.target;
+   this.n = data.n;
+   this.speed = data.speed;
+   var offset = 0;
+   var target = this.target;
+   var number = setInterval(function() {
+     num[data.n].innerHTML = offset;
+     offset +=1;
+     if(offset == target) {
+       clearInterval(number);
+     }
+   },data.speed)
 }
+var countOne = new Count({target:549, n:0,speed:10});
+var countTwo = new Count({target:1466, n:1,speed:1});
+var countTree = new Count({target:613, n:2, speed: 10});
+var countFour = new Count({target:736, n:3, speed: 8});
 
-if (num[0].style.display == 'block' && num[1].style.display == 'block' && num[2].style.display == 'block' && num[3].style.display == 'block') {
-  var numOne = setInterval(function () {
-    var target = 548;
-    offset1 += 1;
-    num[0].innerHTML = offset1;
-    if (offset1 >= target) {
-      clearInterval(numOne);
-    }
-  }, 12);
-  var numTwo = setInterval(function () {
-    var target = 1465;
-    offset2 += 1;
-    num[1].innerHTML = offset2;
-    if (offset2 >= target) {
-      clearInterval(numTwo);
-    }
-  }, 1);
-  var numThree = setInterval(function () {
-    var target = 612;
-    offset3 += 1;
-    num[2].innerHTML = offset3;
-    if (offset3 >= target) {
-      clearInterval(numThree);
-    }
-  }, 10);
-  var numFour = setInterval(function () {
-    var target = 735;
-    offset4 += 1;
-    num[3].innerHTML = offset4;
-    if (offset4 >= target) {
-      clearInterval(numFour);
-    }
-  }, 9);
-}
-
-
-//BLAQUOTE-CARUSEL
+//BLAQUOTE-SLIDER
 
 var caruselBlaq = document.getElementsByClassName('blaquote-wrap')[0],
   ulBlaq = caruselBlaq.querySelector('ul'),
@@ -156,7 +113,7 @@ function setActiveDot(node, addClass, dotsWrap) {
   selectedDot.classList.add(addClass);
 }
 
-//BLOG-CARUSEL
+//BLOG-SLIDER
 
 var caruselBlog = document.getElementsByClassName('blog-wrap')[0],
   ulBlog = caruselBlog.querySelector('ul'),
@@ -167,6 +124,7 @@ var caruselBlog = document.getElementsByClassName('blog-wrap')[0],
 dotsContainerBlog.addEventListener('click', function (e) {
   e = e || event;
   var target = e.target;
-  setSliderPosition(dotsBlog, target, ulBlog, widthBlog); /*108*/
-  setActiveDot(target, ['selected'], dotsBlog); /*117*/
+  if (target.tagName != "LI") return;
+  setSliderPosition(dotsBlog, target, ulBlog, widthBlog); /*98*/
+  setActiveDot(target, ['selected'], dotsBlog); /*107*/
 });
