@@ -416,8 +416,61 @@ main .contact {
     font-weight: 500;
     text-transform: uppercase; }
 
+main .toggle-btn {
+  margin-top: 150px;
+  text-align: center; }
+  main .toggle-btn img {
+    cursor: pointer; }
+
+main .portfolio-nav {
+  height: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  main .portfolio-nav li {
+    top: -100px;
+    transition: top 1s ease;
+    position: absolute; }
+    main .portfolio-nav li:nth-child(1) {
+      left: 32%; }
+    main .portfolio-nav li:nth-child(2) {
+      left: 36%; }
+    main .portfolio-nav li:nth-child(3) {
+      left: 44%; }
+    main .portfolio-nav li:nth-child(4) {
+      left: 49%; }
+    main .portfolio-nav li:nth-child(5) {
+      left: 59%; }
+    main .portfolio-nav li:nth-child(6) {
+      left: 65%; }
+    main .portfolio-nav li a {
+      font-family: "Work Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 84px;
+      text-transform: uppercase;
+      color: #5f5f5f; }
+
+main .portfolio-nav-invisiable {
+  height: 50px; }
+
+main .blog-nav li:nth-child(1) {
+  left: 37%; }
+
+main .blog-nav li:nth-child(2) {
+  left: 41%; }
+
+main .blog-nav li:nth-child(3) {
+  left: 47%; }
+
+main .blog-nav li:nth-child(4) {
+  left: 52%; }
+
+main .blog-nav li:nth-child(5) {
+  left: 59%; }
+
 main .works {
-  padding: 150px 0 100px 0; }
+  padding: 50px 0 100px 0; }
   main .works ul li {
     height: 390px;
     display: inline-block;

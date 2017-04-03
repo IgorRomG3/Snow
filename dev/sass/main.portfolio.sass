@@ -1,6 +1,53 @@
 main
+    .toggle-btn
+        margin-top: 150px
+        text-align: center
+        img
+            cursor: pointer
+    .portfolio-nav
+        height: 0
+        text-align: center
+        position: relative
+        overflow: hidden
+        li
+            top: -100px
+            transition: top 1s ease
+            position: absolute
+            &:nth-child(1)
+                left: 32%
+            &:nth-child(2)
+                left: 36%
+            &:nth-child(3)
+                left: 44%
+            &:nth-child(4)
+                left: 49%
+            &:nth-child(5)
+                left: 59%
+            &:nth-child(6)
+                left: 65%
+            a
+                font-family: "Work Sans"
+                font-size: 14px
+                font-weight: 400
+                line-height: 84px
+                text-transform: uppercase
+                color: #5f5f5f
+    .portfolio-nav-invisiable
+        height: 50px
+    .blog-nav
+        li
+            &:nth-child(1)
+                left: 37%
+            &:nth-child(2)
+                left: 41%
+            &:nth-child(3)
+                left: 47%
+            &:nth-child(4)
+                left: 52%
+            &:nth-child(5)
+                left: 59%
     .works
-        padding: 150px 0 100px 0
+        padding: 50px 0 100px 0
         ul
             li
                 height: 390px
