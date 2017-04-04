@@ -46,26 +46,17 @@ function slideDown(data) {
       }else {
         if(window.pageYOffset > target) {
           offset = offset - speedUp;
-        if (offset <= target) {
-          clearInterval(t);
+          if (offset <= target) {
+            clearInterval(t);
+          }
         }
       }
-    }
-  },10);
+    },10);
   }
 }
-var btnDown = new slideDown({point:downBtn,
-speedDown: 10,
-speedUp: 10,
-target:660});
-var btnAbout = new slideDown({point:aboutBtn,
-speedDown: 10,
-speedUp: 70,
-target:660});
-var btnContact = new slideDown({point:contactBtn,
-speedDown: 70,
-speedUp: 10,
-target:4350});
+var btnDown = new slideDown({point:downBtn, speedDown: 10, speedUp: 10, target:660});
+var btnAbout = new slideDown({point:aboutBtn, speedDown: 10, speedUp: 50, target:660});
+var btnContact = new slideDown({point:contactBtn, speedDown: 50, speedUp: 10,target:4350});
 
 //NUMBERS
 

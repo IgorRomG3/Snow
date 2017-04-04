@@ -43,7 +43,7 @@ gulp.task('move', function () {
 });
 
 gulp.task('movejs', function () {
-	gulp.src('dev/js/**/*.*')
+	gulp.src('dev/js/**/*.js')
 	.pipe(gulp.dest('build/js/'))
 	.pipe(connect.reload());
 
@@ -67,5 +67,5 @@ gulp.task('default', function () {
 	gulp.watch(['dev/sass/**/*.sass'], ['sass']), /*also change path dev/sass... in case sass using*/
 	gulp.watch(['dev/**/*.html'], ['htmlIncluder']),
 	gulp.watch(['dev/img/**/*.*'], ['move']),
-  gulp.watch(['dev/js/**/*.*'], ['movejs']);
+  gulp.watch(['dev/js/**/*.js'], ['movejs']);
 });
