@@ -30,27 +30,41 @@ function slideDown(data) {
   // this.location = data.location;
   this.point.onclick = function () {
     this.target = data.target;
-    this.speed = data.speed;
+    this.speedDown = data.speedDown;
+    this.speedUp = data.speedUp;
     var target = this.target;
-    var offset = 0;
-    var speed = this.speed;
+    var offset = window.pageYOffset;
+    var speedDown = this.speedDown;
+    var speedUp = this.speedUp;
     var t = setInterval(function () {
       window.scrollTo(window.pageYOffset, offset);
-      offset = offset + speed;
-      if (offset >= target) {
-        clearInterval(t);
+        if(window.pageYOffset < target) {
+          offset = offset + speedDown;
+        if (offset >= target) {
+          clearInterval(t);
+        }
+      }else {
+        if(window.pageYOffset > target) {
+          offset = offset - speedUp;
+        if (offset <= target) {
+          clearInterval(t);
+        }
       }
-    },10);
+    }
+  },10);
   }
 }
 var btnDown = new slideDown({point:downBtn,
-speed: 10,
+speedDown: 10,
+speedUp: 10,
 target:660});
 var btnAbout = new slideDown({point:aboutBtn,
-speed: 10,
+speedDown: 10,
+speedUp: 70,
 target:660});
 var btnContact = new slideDown({point:contactBtn,
-speed: 70,
+speedDown: 70,
+speedUp: 10,
 target:4350});
 
 //NUMBERS
