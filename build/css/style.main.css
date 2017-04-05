@@ -424,7 +424,6 @@ main .toggle-btn {
 
 main .portfolio-nav {
   height: 0;
-  text-align: center;
   position: relative;
   overflow: hidden; }
   main .portfolio-nav li {
@@ -443,6 +442,37 @@ main .portfolio-nav {
       left: 59%; }
     main .portfolio-nav li:nth-child(6) {
       left: 65%; }
+    @media (max-width: 1110px) {
+      main .portfolio-nav li:nth-child(5) {
+        left: 60%; }
+      main .portfolio-nav li:nth-child(6) {
+        left: 66%; } }
+    @media (max-width: 991px) {
+      main .portfolio-nav li:nth-child(1) {
+        left: 20%; }
+      main .portfolio-nav li:nth-child(2) {
+        left: 27%; }
+      main .portfolio-nav li:nth-child(3) {
+        left: 39%; }
+      main .portfolio-nav li:nth-child(4) {
+        left: 47%; }
+      main .portfolio-nav li:nth-child(5) {
+        left: 62%; }
+      main .portfolio-nav li:nth-child(6) {
+        left: 72%; } }
+    @media (max-width: 749px) {
+      main .portfolio-nav li:nth-child(1) {
+        left: 2%; }
+      main .portfolio-nav li:nth-child(2) {
+        left: 14%; }
+      main .portfolio-nav li:nth-child(3) {
+        left: 33%; }
+      main .portfolio-nav li:nth-child(4) {
+        left: 48%; }
+      main .portfolio-nav li:nth-child(5) {
+        left: 72%; }
+      main .portfolio-nav li:nth-child(6) {
+        left: 85%; } }
     main .portfolio-nav li a {
       font-family: "Work Sans";
       font-size: 14px;
@@ -450,24 +480,52 @@ main .portfolio-nav {
       line-height: 84px;
       text-transform: uppercase;
       color: #5f5f5f; }
+      @media (max-width: 500px) {
+        main .portfolio-nav li a {
+          font-size: 10px;
+          font-weight: 600; } }
 
 main .portfolio-nav-invisiable {
   height: 50px; }
 
 main .blog-nav li:nth-child(1) {
-  left: 37%; }
+  left: 30%; }
 
 main .blog-nav li:nth-child(2) {
-  left: 41%; }
+  left: 38%; }
 
 main .blog-nav li:nth-child(3) {
   left: 47%; }
 
 main .blog-nav li:nth-child(4) {
-  left: 52%; }
+  left: 56%; }
 
 main .blog-nav li:nth-child(5) {
-  left: 59%; }
+  left: 68%; }
+
+@media (max-width: 800px) {
+  main .blog-nav li:nth-child(1) {
+    left: 20%; }
+  main .blog-nav li:nth-child(2) {
+    left: 33%; }
+  main .blog-nav li:nth-child(3) {
+    left: 46%; }
+  main .blog-nav li:nth-child(4) {
+    left: 58%; }
+  main .blog-nav li:nth-child(5) {
+    left: 74%; } }
+
+@media (max-width: 520px) {
+  main .blog-nav li:nth-child(1) {
+    left: 5%; }
+  main .blog-nav li:nth-child(2) {
+    left: 20%; }
+  main .blog-nav li:nth-child(3) {
+    left: 40%; }
+  main .blog-nav li:nth-child(4) {
+    left: 58%; }
+  main .blog-nav li:nth-child(5) {
+    left: 82%; } }
 
 main .works {
   padding: 50px 0 100px 0; }

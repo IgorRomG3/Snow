@@ -55,7 +55,7 @@ function slideDown(data) {
   }
 }
 var btnDown = new slideDown({point:downBtn, speedDown: 10, speedUp: 10, target:660});
-var btnAbout = new slideDown({point:aboutBtn, speedDown: 10, speedUp: 50, target:660});
+var btnAbout = new slideDown({point:aboutBtn, speedDown: 10, speedUp: 50, target:560});
 var btnContact = new slideDown({point:contactBtn, speedDown: 50, speedUp: 10,target:4350});
 
 //NUMBERS

@@ -6,7 +6,6 @@ main
             cursor: pointer
     .portfolio-nav
         height: 0
-        text-align: center
         position: relative
         overflow: hidden
         li
@@ -25,6 +24,37 @@ main
                 left: 59%
             &:nth-child(6)
                 left: 65%
+            @media (max-width:1110px)
+                &:nth-child(5)
+                    left: 60%
+                &:nth-child(6)
+                    left: 66%
+            @media (max-width:991px)
+                &:nth-child(1)
+                    left: 20%
+                &:nth-child(2)
+                    left: 27%
+                &:nth-child(3)
+                    left: 39%
+                &:nth-child(4)
+                    left: 47%
+                &:nth-child(5)
+                    left: 62%
+                &:nth-child(6)
+                    left: 72%
+            @media (max-width:749px)
+                &:nth-child(1)
+                    left: 2%
+                &:nth-child(2)
+                    left: 14%
+                &:nth-child(3)
+                    left: 33%
+                &:nth-child(4)
+                    left: 48%
+                &:nth-child(5)
+                    left: 72%
+                &:nth-child(6)
+                    left: 85%
             a
                 font-family: "Work Sans"
                 font-size: 14px
@@ -32,20 +62,45 @@ main
                 line-height: 84px
                 text-transform: uppercase
                 color: #5f5f5f
+                @media (max-width:500px)
+                    font-size: 10px
+                    font-weight: 600
     .portfolio-nav-invisiable
         height: 50px
     .blog-nav
         li
             &:nth-child(1)
-                left: 37%
+                left: 30%
             &:nth-child(2)
-                left: 41%
+                left: 38%
             &:nth-child(3)
                 left: 47%
             &:nth-child(4)
-                left: 52%
+                left: 56%
             &:nth-child(5)
-                left: 59%
+                left: 68%
+            @media (max-width:800px)
+                &:nth-child(1)
+                    left: 20%
+                &:nth-child(2)
+                    left: 33%
+                &:nth-child(3)
+                    left: 46%
+                &:nth-child(4)
+                    left: 58%
+                &:nth-child(5)
+                    left: 74%
+            @media (max-width:520px)
+                &:nth-child(1)
+                    left: 5%
+                &:nth-child(2)
+                    left: 20%
+                &:nth-child(3)
+                    left: 40%
+                &:nth-child(4)
+                    left: 58%
+                &:nth-child(5)
+                    left: 82%
     .works
         padding: 50px 0 100px 0
         ul
